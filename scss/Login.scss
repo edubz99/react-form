@@ -1,0 +1,93 @@
+$mainOrange: #f13252;
+
+.login-wrapper {
+  &__title {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+}
+.form-container {
+  background: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  &__link {
+    text-align: center;
+    text-decoration: none;
+    color: $mainOrange;
+    background: #ccc6c6;
+    padding: 1em;
+    flex: 1;
+  }
+  &:active {
+    background: $mainOrange;
+    color: #ccc6c6;
+  }
+}
+
+.form {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  &__label {
+    font-size: 0.7em;
+    padding: 1em 0 0.5em 1em;
+    font-weight: 500;
+  }
+  &__input {
+    background: none;
+    border: 1px solid $mainOrange;
+    outline: none;
+    padding: 0.8em;
+    &:focus {
+      border: 2px solid $mainOrange;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+    font-size: 0.7em;
+    padding: 1em 0 0.5em 1em;
+    font-weight: 100;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__button {
+    background: rgba(241, 50, 82, 0.8);
+    border: none;
+    margin: 2em auto;
+    padding: 0.5em 3em;
+    outline: none;
+    text-align: center;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.8em;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      background: $mainOrange;
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  font-style: italic;
+}
+:-moz-placeholder {
+  font-style: italic;
+}
+::-moz-placeholder {
+  font-style: italic;
+}
+:-ms-input-placeholder {
+  font-style: italic;
+}
